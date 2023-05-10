@@ -102,10 +102,10 @@ header {
    padding:32px 0px 32px 0px;
 }
 .studio {
-   padding:32px 50px 32px 93px;
+   margin:32px 50px 32px 93px;
 }
 .portofolio {
-   padding-right:50px;
+   margin-right:50px;
 }
 
 .description-list-title{
@@ -123,19 +123,12 @@ header {
    width:270px;
 }
 
-.description-we-do {
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.16;
-   text-align: center;
-   padding-bottom:50px;
-   margin:0px;
-}
 
-.our-team-title {
+.our-team-title, .customers-title, .description-we-do {
    font-weight: 700;
    font-size: 36px;
    line-height: 1.16;
+   color: var(--small-title);
    text-align: center;
    padding-bottom:50px;
    margin:0px;
@@ -185,6 +178,8 @@ header {
 .main-footer {
    background-color: var(--section-color);
    padding-left:215px;
+   display:flex;
+   flex-direction:row;
 }
 
 .request-section-intro {
@@ -200,8 +195,16 @@ header {
 }
 
 .request-section {
-   background-color: var(--section-color);
+   background-image:linear-gradient(to bottom, rgba(255,255,255,0), rgba(81,80,89,0.72)), url(/images/effective-bcg.png);
+   object-fit:fill;
+   background-repeat:no-repeat;
+   object-position: center;
+   height: 100%;
+   width: 100%;
+   width:1600px;
+   height:600px;
 }
+
 
 .filter-list li {
    display: inline;
@@ -220,7 +223,7 @@ header {
 }
 
 .header-email-link {
-   padding:32px 40px 32px 385px;
+   margin:32px 40px 32px 330px;
 }
 
 .we-do {
@@ -255,13 +258,14 @@ header {
 }
 
 .member:nth-child(-n+3) {
-   padding-right:30px;
+   margin-right:30px;
 }
 .address {
    font-style:normal;
    display:flex;
    flex-direction:column;
    padding-bottom:60px;
+   width:231px;
 }
 
 .footer-email-link {
@@ -270,6 +274,7 @@ header {
 
 .logo-footer {
    padding:60px 0px 28px 0px;
+   width:145px;
 }
 
 
@@ -277,7 +282,6 @@ header {
    display:flex;
    justify-content:center;
    padding-bottom:50px;
-   margin:0px;
 }
 
 .projects {
@@ -292,4 +296,121 @@ header {
 .project {
    margin-bottom:30px;
    border: 1px solid #eeeeee;
+}
+
+.icon-feature:nth-child(-n+3) {
+   margin-right:30px;
+}
+
+.client {
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   width: 170px;
+   height: 92px;
+}
+
+.our-customers {
+   display:flex;
+   justify-content: space-around;
+}
+
+.customers {
+   padding-bottom:94px;
+}
+
+.icon-envelope, .icon-phone {
+   width:16px;
+   height:12px;
+}
+
+.icon-social {
+   width:20px;
+   height:16.25px;
+   border-radius:0px 30px 30px 0;
+}
+
+.socials {
+   display:flex;
+   justify-content:space-between;
+}
+
+.member {
+   background-color:white;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px
+}
+
+
+.social-container {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:44px;
+   height:44px;
+   border-radius:33px 33px 33px 33px;
+   margin-bottom:30px;
+}
+
+.social-container:hover .icon-social {
+   filter:brightness(4);
+}
+.social-container:hover  {
+   background-color:#2196f3;
+}
+
+
+ .socials-footer {
+   display:flex;
+   flex-direction:row;
+} 
+
+ .header-email-link:hover .icon-envelope {
+   filter: invert(45%) sepia(92%) saturate(1752%) hue-rotate(184deg) brightness(98%) contrast(95%);
+}
+
+.header-phone-link:hover .icon-phone {
+   filter: invert(45%) sepia(92%) saturate(1752%) hue-rotate(184deg) brightness(98%) contrast(95%);
+}
+
+.footer-email-link:hover .icon-envelope{
+   filter: invert(45%) sepia(92%) saturate(1752%) hue-rotate(184deg) brightness(98%) contrast(95%);
+}
+
+.footer-phone-link:hover .icon-phone {
+   filter: invert(45%) sepia(92%) saturate(1752%) hue-rotate(184deg) brightness(98%) contrast(95%);
+}
+
+.findus h4 {
+   font-family: Roboto;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-align: left;
+   color:var(--imp-text);
+   padding-left:10px;
+}
+
+.findus {
+   padding:75px 0px 0px 94px;
+}
+
+.project:hover {
+   box-shadow: 1px 4px 6px 0px #00000029;
+   box-shadow: 0px 4px 4px 0px #0000000F;
+   box-shadow: 0px 1px 1px 0px #0000001F;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+   box-shadow: 0px 2px 2px 0px #0000001F;
+   box-shadow: 0px 1px 2px 0px #00000014;
+   box-shadow: 0px 3px 1px 0px #0000001A; 
+}
+
+.client:hover {
+   filter: invert(45%) sepia(92%) saturate(1752%) hue-rotate(184deg) brightness(98%) contrast(95%);
 }
